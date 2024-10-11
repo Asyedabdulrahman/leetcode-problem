@@ -3,13 +3,38 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
-    let count = 0 ; 
-    let majority = 0 ;
-    for(let num of nums){
-        if(count === 0){
-            majority = num;
+    let n = nums.length;
+    let cnt = 0; 
+    let ele = 0;
+
+    //find the suitable candidate for majority element finding 
+    for(let i = 0 ; i < n; i++){
+        if(cnt === 0){
+            cnt = 1;
+            ele = nums[i];
         }
-        count+= (num === majority)? 1 : -1;
+        else if (nums[i] === ele){
+            cnt++;
+        }
+        else{
+            cnt--;
+        }
     }
-    return majority;
+
+    //finding the majority element based on element selection 
+
+    let cnt1 = 0;
+    for(let i = 0;  i < n; i++){
+        if(nums[i] === ele){
+            cnt1++;
+        }
+    }
+
+    if(cnt1 > Math.floor(n/2)){
+        return ele
+    }
+    else{
+        return -1
+    }
+    
 };
