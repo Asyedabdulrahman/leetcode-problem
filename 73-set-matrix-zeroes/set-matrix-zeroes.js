@@ -11,7 +11,7 @@ var setZeroes = function(matrix) {
     //traverse the matrix
     for(let i = 0; i < n;i++){
         for(let j = 0; j < m; j++){
-            if(matrix[i][j] == 0){
+            if(matrix[i][j] === 0){
                 row[i] = 1;
                 col[j] = 1;
             }
