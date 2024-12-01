@@ -3,10 +3,12 @@
  * @return {number}
  */
 var findDuplicate = function(nums) {
-    nums.sort((a,b) => a - b);
-    for(let i = 0; i < nums.length;i++){
-        if(nums[i] == nums[i+1]){
-            return nums[i];
+    let seen = new Set();
+    for (let i = 0; i < nums.length; i++) {
+        if (seen.has(nums[i])) {
+            return nums[i]; // Duplicate found
         }
-    }    
+        seen.add(nums[i]);
+    }
+    return -1; // No duplicate found
 };
