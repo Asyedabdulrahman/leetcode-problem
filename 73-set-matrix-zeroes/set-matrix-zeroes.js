@@ -2,34 +2,25 @@
  * @param {number[][]} matrix
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
-var setZeroes = function (matrix) {
-    const n = matrix.length;
-    const m = matrix[0].length;
-    const row = new Array(n).fill(0); // row array
-    const col = new Array(m).fill(0); // col array
-
-    // Traverse the matrix:
-    for (let i = 0; i < n; i++) {
-        for (let j = 0; j < m; j++) {
-            if (matrix[i][j] === 0) {
-                // mark ith index of row with 1:
-                row[i] = 1;
-
-                // mark jth index of col with 1:
-                col[j] = 1;
-            }
+var setZeroes = function(matrix) {
+    const zeros = []
+    const rowSet = new Set()
+    const colSet = new Set()
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+            if (matrix[i][j] === 0) zeros.push([i, j])
         }
     }
-
-    // Finally, mark all (i, j) as 0
-    // if row[i] or col[j] is marked with 1.
-    for (let i = 0; i < n; i++) {
-        for (let j = 0; j < m; j++) {
-            if (row[i] || col[j]) {
-                matrix[i][j] = 0;
-            }
+    const rowSeen = new Set()
+    const colSeen = new Set()
+    for (const zero of zeros) {
+        if (!rowSeen.has(zero[1])) {
+            for (let i = 0; i < matrix.length; i++) matrix[i][zero[1]] = 0
+            rowSeen.add(zero[1])
         }
+        if (!colSeen.has(zero[0])) {
+            for (let i = 0; i < matrix[0].length; i++) matrix[zero[0]][i] = 0
+            colSeen.add(zero[0])
+        } 
     }
-
-    return matrix;
 };
