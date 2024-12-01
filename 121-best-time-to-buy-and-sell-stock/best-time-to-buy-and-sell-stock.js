@@ -4,15 +4,15 @@
  */
 var maxProfit = function(prices) {
     let maxProfit = 0;
-    let n = prices.length;
     let minPrice = Infinity;
 
-    for(let i = 0; i < n; i++){
+    //for loop to iterate through the array to find the min price to buy the stock
+    for(let i = 0; i < prices.length;i++){
         if(prices[i] < minPrice){
             minPrice = prices[i];
         }
 
-        profit = prices[i] - minPrice ;
+        let profit = prices[i] - minPrice;
 
         if(profit > maxProfit){
             maxProfit = profit;
