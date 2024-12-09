@@ -4,6 +4,7 @@
  * @return {number}
  */
 var subarraySum = function(nums, k) {
+    if(nums.length < 0) return 0;
     let result = 0;
     let sum = 0;
     const map = new Map();
