@@ -3,20 +3,20 @@
  * @param {number} k
  * @return {number}
  */
-var maximumBeauty = function (a, k) {
-  const n = a.length
-  a.sort((a, b) => a - b)
-
-  let an = 1
-
-  let L = 0
-  for (let R = 1; R < n; ++R) {
-    if (L < R && a[L] + k < a[R] - k) {
-      L++ // do not meet or overlap - move L towards R
-    } else {
-      an = Math.max(an, R - L + 1)
+var maximumBeauty = function(nums, k) {
+    nums.sort((a,b) => a-b)
+    if(nums.length === 1) {
+        return 1;
     }
-  }
 
-  return an
-}
+    let i = 0;
+    let res = 0;
+    for (let j = 1; j < nums.length; j++) {
+        if(nums[j] - nums[i] > 2*k) {
+            i++;
+        }
+        res = Math.max(res, j-i+1)
+
+    }
+    return res;
+};
