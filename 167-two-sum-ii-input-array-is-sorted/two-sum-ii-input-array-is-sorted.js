@@ -4,6 +4,7 @@
  * @return {number[]}
  */
 var twoSum = function(numbers, target) {
+    if(numbers.length < 0) return 0;
     let left = 0;
     let right = numbers.length - 1;
 
