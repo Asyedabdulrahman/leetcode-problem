@@ -4,14 +4,15 @@
  */
 var maxArea = function(height) {
     let maxArea = 0;
-    let i = 0, j = height.length - 1;
+    let i = 0;
+    let j = height.length - 1;
 
     while(i < j){
-        const curWidth = j - i;
-        const curHeight = Math.min(height[i], height[j]);
-        maxArea = Math.max(maxArea, curWidth * curHeight);
+        let curWidth = j - i;
+        let curheight = Math.min(height[i], height[j]);
+        maxArea = Math.max(maxArea, curWidth * curheight);
 
-        if(height[i] <= height[j]){
+        if(height[i] <= height[j] ){
             i++;
         }
         else{
@@ -19,4 +20,5 @@ var maxArea = function(height) {
         }
     }
     return maxArea;
+    
 };
