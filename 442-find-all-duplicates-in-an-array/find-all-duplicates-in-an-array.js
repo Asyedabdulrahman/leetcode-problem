@@ -3,18 +3,19 @@
  * @return {number[]}
  */
 var findDuplicates = function(nums) {
-    let max = [];
-    let seen = new Set();
+    const output = [];
 
-    if(nums.length < 0) return 0;
     for(const num of nums){
-        if(seen.has(num)){
-            max.push(num);
+        const idx = Math.abs(num) - 1 ;
+
+        //check if the value at the calculated index is negative
+        if(nums[idx] < 0){
+            output.push(Math.abs(num));
         }
         else{
-            seen.add(num);
+            nums[idx] = -nums[idx];
         }
     }
-    return max;
+    return output;
     
 };
