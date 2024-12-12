@@ -5,11 +5,8 @@
 var findDuplicates = function(nums) {
     if(nums.length < 0) return 0;
     const output = [];
-
     for(const num of nums){
-        
         const idx = Math.abs(num) - 1 ;
-
         //check if the value at the calculated index is negative
         if(nums[idx] < 0){
             output.push(Math.abs(num));
