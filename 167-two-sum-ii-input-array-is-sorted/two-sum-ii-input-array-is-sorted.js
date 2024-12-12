@@ -14,5 +14,5 @@ var twoSum = function(numbers, target) {
         }
        total > target ? right-- : left++;
     }
-    
+    return null;  
 };
