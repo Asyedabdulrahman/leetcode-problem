@@ -9,9 +9,12 @@ var maxArea = function(height) {
 
     while(i < j){
         let curWidth = j - i;
-        let curheight = Math.min(height[i], height[j]);
-        maxArea = Math.max(maxArea, curWidth * curheight);
+        let curheight = Math.min(height[i], height[j]) * curWidth;
 
+        if(curheight > maxArea){
+            maxArea = curheight;
+        }
+       
         if(height[i] <= height[j] ){
             i++;
         }
