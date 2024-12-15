@@ -2,30 +2,28 @@
  * @param {number[]} nums
  * @return {number}
  */
-var longestConsecutive = function(nums) {
-    if (nums.length === 0) return 0;
+    var longestConsecutive = function(nums) {
+    const set = new Set(nums);  // Add all numbers to a set for O(1) lookups
+    let longest = 0;
     
-    // Sort the array numerically
-    let sorted = nums.sort((a, b) => a - b);
-    
-    let longest = 1;  // At least one number will form a sequence
-    let cnt = 1;      // Initial count of consecutive numbers
-    let lastSmaller = sorted[0];  // Start with the first number
-    
-    for (let i = 1; i < sorted.length; i++) {
-        if (sorted[i] === lastSmaller) {
-            // Skip duplicate numbers
-            continue;
-        } else if (sorted[i] === lastSmaller + 1) {
-            // Continue the sequence
-            cnt++;
-        } else {
-            // Sequence broken, reset count
-            cnt = 1;
+    for (let num of set) {
+        // Check if it is the start of a sequence
+        if (!set.has(num - 1)) {
+            let currentNum = num;
+            let currentStreak = 1;
+
+            // Check the sequence of consecutive numbers starting from 'num'
+            while (set.has(currentNum + 1)) {
+                currentNum++;
+                currentStreak++;
+            }
+
+            // Update the longest streak found
+            longest = Math.max(longest, currentStreak);
         }
-        lastSmaller = sorted[i];
-        longest = Math.max(longest, cnt);
     }
     
     return longest;
 };
+
+
