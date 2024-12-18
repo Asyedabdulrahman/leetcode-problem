@@ -14,7 +14,7 @@ var rotate = function(matrix) {
 
         // Reverse each row
          for (let i = 0; i < matrix.length; i++) {
-        matrix[i].reverse();
+             matrix[i].reverse();
     }
     
 };
