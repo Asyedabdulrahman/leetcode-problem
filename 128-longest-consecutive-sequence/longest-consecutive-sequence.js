@@ -4,13 +4,24 @@
  */
  
 var longestConsecutive = function(nums) {
-    if(nums.length===0) return 0
- nums = new Int32Array(nums).sort();
-  let max = 1, window = 1;
-  for (let i = 1; i < nums.length; i++) {
-    if(nums[i-1]==nums[i])continue;
-      window = nums[i - 1] + 1 === nums[i] ? window + 1 : 1;
-      max = Math.max(window, max);
-  }
-  return max; 
+   
+   if(nums.length === 0) return 0;
+
+   let numSet = new Set(nums);
+   let maxLength = 0;
+
+   for(let num of numSet){
+    if(!numSet.has(num - 1)){
+        let currentNum = num;
+        let currentLength = 1;
+
+        while(numSet.has(currentNum + 1)){
+            currentNum++;
+            currentLength++;
+        }
+
+        maxLength = Math.max(maxLength, currentLength);
+    }
+   }
+   return maxLength;
 };
