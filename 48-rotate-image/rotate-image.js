@@ -13,10 +13,8 @@ var rotate = function(matrix) {
         }
 
         // Reverse each row
-        for (let i = 0; i < n; i++) {
-            for (let j = 0; j < Math.floor(n / 2); j++) {
-                [matrix[i][j], matrix[i][n - 1 - j]] = [matrix[i][n - 1 - j], matrix[i][j]]; // Swap using destructuring
-            }
-        }
+         for (let i = 0; i < matrix.length; i++) {
+        matrix[i].reverse();
+    }
     
 };
