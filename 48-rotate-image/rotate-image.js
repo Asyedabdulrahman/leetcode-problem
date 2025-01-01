@@ -3,19 +3,20 @@
  * @return {void} Do not return anything, modify matrix in-place instead.
  */
 var rotate = function(matrix) {
-     const n = matrix.length;
-     if(n === 0) return 0;
+    const n = matrix.length;
+    if(n === 0) return 0;
 
-        // Transpose the matrix
-        for (let i = 0; i < n; i++) {
-            for (let j = i + 1; j < n; j++) {
-                [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]]; // Swap using destructuring
-            }
+
+
+    for(let i = 0; i < n; i++){
+        for(let j = i + 1; j < n ;j++){
+            [matrix[i][j], matrix[j][i]] = [matrix[j][i], matrix[i][j]];
         }
+    }
 
-        // Reverse each row
-         for (let i = 0; i < matrix.length; i++) {
-             matrix[i].reverse();
+    for(let i = 0; i < matrix.length; i++){
+        matrix[i].reverse();
     }
     
+    return matrix;
 };
