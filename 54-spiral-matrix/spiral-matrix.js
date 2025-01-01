@@ -3,7 +3,7 @@
  * @return {number[]}
  */
 var spiralOrder = function(matrix) {
-    if (!matrix.length && !matrix[0].length) return [];
+    // if (!matrix.length && !matrix[0].length) return [];
     let n = matrix.length; 
 
     let top = 0; 
