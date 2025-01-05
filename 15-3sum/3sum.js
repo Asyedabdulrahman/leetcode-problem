@@ -3,6 +3,7 @@
  * @return {number[][]}
  */
 var threeSum = function(nums) {
+    if(nums.length === 0) return 0;
     nums.sort((a,b) => a - b);
     let result = []; //store the 3sum value result
 
