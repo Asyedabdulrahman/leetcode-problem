@@ -4,7 +4,7 @@
  * @return {number[][]}
  */
 var fourSum = function(nums, target) {
-    // if(nums.length === 0 || nums.length >= 1) return 0;
+    if(nums.length < 4) return [];
     nums.sort((a,b) => a - b);
     const result = [];
 
@@ -17,8 +17,8 @@ var fourSum = function(nums, target) {
                 const sum = nums[i] + nums[j] + nums[low] + nums[high];
                 if(sum === target){
                     result.push([nums[i], nums[j], nums[low], nums[high]])
-                    while(nums[low] === nums[low + 1]) low++
-                    while(nums[high] === nums[high - 1]) high--;
+                    while(low < high && nums[low] === nums[low + 1]) low++
+                    while(low < high && nums[high] === nums[high - 1]) high--;
                     low++;
                     high--;
                 }
