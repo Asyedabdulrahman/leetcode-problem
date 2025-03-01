@@ -10,7 +10,7 @@ var search = function (nums, target) {
     let right = nums.length - 1;
 
     while (left <= right) {
-        let mid = Math.floor((left + right) / 2);
+        let mid = left + ((right - left) >> 1); //aovid potential overflow for larget numbers
         if (nums[mid] === target) return mid;
 
         if (nums[left] <= nums[mid]) {
