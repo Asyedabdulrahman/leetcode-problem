@@ -1,38 +1,34 @@
-/**
- * @param {number[]} nums1
- * @param {number[]} nums2
- * @return {number}
- */
 var findMedianSortedArrays = function(nums1, nums2) {
-    let a = nums1, b = nums2;
-
-    let n1 = a.length, n2 = b.length;
-    // if n1 is bigger swap the arrays:
-    if (n1 > n2) return findMedianSortedArrays(b, a);
-
-    let n = n1 + n2; // total length
-    let left = Math.floor((n1 + n2 + 1) / 2); // length of left half
-    // apply binary search:
-    let low = 0, high = n1;
-    while (low <= high) {
-        let mid1 = Math.floor((low + high) / 2);
-        let mid2 = left - mid1;
-        // calculate l1, l2, r1, and r2
-        let l1 = Number.MIN_SAFE_INTEGER, l2 = Number.MIN_SAFE_INTEGER;
-        let r1 = Number.MAX_SAFE_INTEGER, r2 = Number.MAX_SAFE_INTEGER;
-        if (mid1 < n1) r1 = a[mid1];
-        if (mid2 < n2) r2 = b[mid2];
-        if (mid1 - 1 >= 0) l1 = a[mid1 - 1];
-        if (mid2 - 1 >= 0) l2 = b[mid2 - 1];
-
-        if (l1 <= r2 && l2 <= r1) {
-            if (n % 2 === 1) return Math.max(l1, l2);
-            else return (Math.max(l1, l2) + Math.min(r1, r2)) / 2;
-        }
-
-        // eliminate the halves:
-        else if (l1 > r2) high = mid1 - 1;
-        else low = mid1 + 1;
+    if (nums1.length > nums2.length) {
+        [nums1, nums2] = [nums2, nums1];
     }
-    return 0; // dummy statement
+    
+    const m = nums1.length;
+    const n = nums2.length;
+    let low = 0, high = m;
+    
+    while (low <= high) {
+        const partitionX = Math.floor((low + high) / 2);
+        const partitionY = Math.floor((m + n + 1) / 2) - partitionX;
+        
+        const maxX = (partitionX === 0) ? Number.MIN_SAFE_INTEGER : nums1[partitionX - 1];
+        const maxY = (partitionY === 0) ? Number.MIN_SAFE_INTEGER : nums2[partitionY - 1];
+        
+        const minX = (partitionX === m) ? Number.MAX_SAFE_INTEGER : nums1[partitionX];
+        const minY = (partitionY === n) ? Number.MAX_SAFE_INTEGER : nums2[partitionY];
+        
+        if (maxX <= minY && maxY <= minX) {
+            if ((m + n) % 2 === 0) {
+                return (Math.max(maxX, maxY) + Math.min(minX, minY)) / 2;
+            } else {
+                return Math.max(maxX, maxY);
+            }
+        } else if (maxX > minY) {
+            high = partitionX - 1;
+        } else {
+            low = partitionX + 1;
+        }
+    }
+    
+    throw new Error("Input arrays are not sorted.");
 };
