@@ -1,24 +1,26 @@
-var findMedianSortedArrays = function(nums1, nums2) {
-    if (nums1.length > nums2.length) {
-        [nums1, nums2] = [nums2, nums1];
-    }
-    
-    const m = nums1.length;
-    const n = nums2.length;
-    let low = 0, high = m;
-    
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number}
+ */
+function findMedianSortedArrays(nums1, nums2) {
+    if (nums1.length > nums2.length) return findMedianSortedArrays(nums2, nums1); // Ensure nums1 is smaller
+
+    let x = nums1.length, y = nums2.length;
+    let low = 0, high = x;
+
     while (low <= high) {
-        const partitionX = Math.floor((low + high) / 2);
-        const partitionY = Math.floor((m + n + 1) / 2) - partitionX;
-        
-        const maxX = (partitionX === 0) ? Number.MIN_SAFE_INTEGER : nums1[partitionX - 1];
-        const maxY = (partitionY === 0) ? Number.MIN_SAFE_INTEGER : nums2[partitionY - 1];
-        
-        const minX = (partitionX === m) ? Number.MAX_SAFE_INTEGER : nums1[partitionX];
-        const minY = (partitionY === n) ? Number.MAX_SAFE_INTEGER : nums2[partitionY];
-        
+        let partitionX = Math.floor((low + high) / 2);
+        let partitionY = Math.floor((x + y + 1) / 2) - partitionX;
+
+        let maxX = (partitionX === 0) ? Number.MIN_SAFE_INTEGER : nums1[partitionX - 1];
+        let maxY = (partitionY === 0) ? Number.MIN_SAFE_INTEGER : nums2[partitionY - 1];
+
+        let minX = (partitionX === x) ? Number.MAX_SAFE_INTEGER : nums1[partitionX];
+        let minY = (partitionY === y) ? Number.MAX_SAFE_INTEGER : nums2[partitionY];
+
         if (maxX <= minY && maxY <= minX) {
-            if ((m + n) % 2 === 0) {
+            if ((x + y) % 2 === 0) {
                 return (Math.max(maxX, maxY) + Math.min(minX, minY)) / 2;
             } else {
                 return Math.max(maxX, maxY);
@@ -29,6 +31,6 @@ var findMedianSortedArrays = function(nums1, nums2) {
             low = partitionX + 1;
         }
     }
-    
-    throw new Error("Input arrays are not sorted.");
-};
+
+    throw new Error("Input arrays are not sorted");
+}
