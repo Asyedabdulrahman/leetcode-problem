@@ -5,7 +5,7 @@
  */
 var splitArray = function(nums, k) {
     let l = Math.max(...nums);
-    let r = nums.reduce((a,b) => a + b, 0 );
+    let r = nums.reduce((a,b) => a + b);
     let n = nums.length;
     if(n === k) return l;
 
