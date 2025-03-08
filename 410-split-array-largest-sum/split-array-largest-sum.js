@@ -4,33 +4,28 @@
  * @return {number}
  */
 var splitArray = function(nums, k) {
-    let l = Math.max(...nums);
-    let r = nums.reduce((a,b) => a + b);
-    let n = nums.length;
-    if(n === k) return l;
-
-    let ans = 0;
-    while(l <= r){
-        let m = Math.floor((l + r) / 2);
-        let tempsum = 0, cnt = 0;
-        for(let i = 0; i < n; i++){
-            if(tempsum + nums[i] <= m){
-                tempsum += nums[i];
-            }
-            else {
-                cnt++;
-                tempsum = nums[i];
-            }
-        }
-        cnt++;
+    let left =Math.max(...nums);
+    let right =nums.reduce((a,b)=>a+b,0);
     
-    if(cnt <=k){
-        ans = m;
-        r = m - 1;
-    }
-    else {
-        l = m + 1;
-    }
-    }
-    return ans;
+    while(left<right){
+        let mid=Math.floor((left+right)/2);
+        let subarraySum=0;
+         let subarrays =1;
+        
+        for(let i=0; i<nums.length; i++){
+            subarraySum=subarraySum+nums[i];
+            if(subarraySum>mid){
+              subarrays++;
+              subarraySum= nums[i];     
+            }
+            }
+       
+        if(subarrays<=k){
+            right=mid;
+        }else{
+            left=mid+1;
+        }
+            
+        }
+      return left;    
 };
