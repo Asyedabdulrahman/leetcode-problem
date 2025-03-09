@@ -4,6 +4,10 @@
  * @return {number}
  */
 var shipWithinDays = function(weights, days) {
+    if (weights.length === 0) return 0; // Base Case: No packages to ship
+    if (days === 1) return weights.reduce((a, b) => a + b); // Must ship everything in 1 day
+    if (days >= weights.length) return Math.max(...weights); // Each package can be shipped alone
+
     let left = Math.max(...weights);
     let right = weights.reduce((a,b) => a + b);
 
