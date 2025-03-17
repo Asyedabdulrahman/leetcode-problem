@@ -11,6 +11,9 @@
  * @return {boolean}
  */
 var hasCycle = function(head) {
+    if(!head || !head.next){
+        return false
+    }
     let fast = head;
     let slow = head
     
