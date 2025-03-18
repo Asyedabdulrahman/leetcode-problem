@@ -20,6 +20,7 @@ public class Solution {
             if(slow == fast) break;
         }
         if(fast == null || fast.next == null) return null;
+        // this was to handle the edge case //
         
         fast = head;
         while(fast != slow){
