@@ -12,49 +12,59 @@ class Solution {
     public ListNode sortList(ListNode head) {
         if (head == null || head.next == null) return head; // Base case
 
-        // Step 1: Find the middle of the linked list
-        ListNode mid = findMiddle(head);
+        int length = getLength(head);
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
 
-        // Step 2: Split the list into two halves
-        ListNode leftHalf = head;
-        ListNode rightHalf = mid.next;
-        mid.next = null; // Break the list
+        for (int size = 1; size < length; size *= 2) { // Bottom-up merge
+            ListNode prev = dummy;
+            ListNode curr = dummy.next;
 
-        // Step 3: Recursively sort both halves
-        ListNode leftSorted = sortList(leftHalf);
-        ListNode rightSorted = sortList(rightHalf);
-
-        // Step 4: Merge the sorted halves
-        return merge(leftSorted, rightSorted);
-    }
-
-    private ListNode findMiddle(ListNode head) {
-        ListNode slow = head, fast = head.next;
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
+            while (curr != null) {
+                ListNode left = curr;
+                ListNode right = split(left, size);
+                curr = split(right, size);
+                prev = merge(left, right, prev);
+            }
         }
-        return slow; // Middle node
+        return dummy.next;
     }
 
-    private ListNode merge(ListNode l1, ListNode l2) {
-        ListNode dummy = new ListNode(-1);
-        ListNode tail = dummy;
+    private int getLength(ListNode head) {
+        int length = 0;
+        while (head != null) {
+            length++;
+            head = head.next;
+        }
+        return length;
+    }
 
+    private ListNode split(ListNode head, int size) {
+        if (head == null) return null;
+        for (int i = 1; head.next != null && i < size; i++) {
+            head = head.next;
+        }
+        ListNode next = head.next;
+        head.next = null;
+        return next;
+    }
+
+    private ListNode merge(ListNode l1, ListNode l2, ListNode prev) {
+        ListNode curr = prev;
         while (l1 != null && l2 != null) {
             if (l1.val < l2.val) {
-                tail.next = l1;
+                curr.next = l1;
                 l1 = l1.next;
             } else {
-                tail.next = l2;
+                curr.next = l2;
                 l2 = l2.next;
             }
-            tail = tail.next;
+            curr = curr.next;
         }
+        if (l1 != null) curr.next = l1;
+        if (l2 != null) curr.next = l2;
 
-        if (l1 != null) tail.next = l1;
-        if (l2 != null) tail.next = l2;
-
-        return dummy.next;
+        while (curr.next != null) curr = curr.next;
+        return curr;
     }
 }
