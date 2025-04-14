@@ -10,7 +10,7 @@
  */
 class Solution {
     public ListNode rotateRight(ListNode head, int k) {
-        while(head == null || head.next == null) return head;
+        while(head == null || head.next == null ) return head;
 
         ListNode temp = head;
         int length = 0;
@@ -19,22 +19,22 @@ class Solution {
             length++;
         }
 
-        //step 2 : calculate the effective rotation using modulo
-        int rotation = k % length;
+        int rotation  = k % length;
 
-        for(int i = 0; i < rotation ; i++){
-            ListNode last = head; 
+        for(int i = 0; i < rotation; i++){
+            ListNode last = head;
             ListNode prev = null;
 
-            while(last.next !=  null){
+            while(last.next != null){
                 prev = last;
                 last = last.next;
             }
 
             last.next = head;
-            prev.next  = null;
+            prev.next = null;
             head = last;
         }
         return head;
+        
     }
 }
