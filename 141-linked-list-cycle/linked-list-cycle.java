@@ -11,9 +11,6 @@
  */
 public class Solution {
     public boolean hasCycle(ListNode head) {
-        // if(head != null || head.next != null){
-        //     return false;
-        // }
         ListNode fast = head;
         ListNode slow = head;
 
@@ -27,4 +24,4 @@ public class Solution {
         }
             return false;
     }
-}
+};
