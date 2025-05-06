@@ -7,7 +7,7 @@ class Solution {
         int right = nums.length - 1;
 
         while(left <= right){
-            int mid = left + ((right - left) >> 1); // to avoid potential overflow
+            int mid = left + (right - left) / 2; // to avoid potential overflow
 
             if(nums[mid] == target) return mid;
 
