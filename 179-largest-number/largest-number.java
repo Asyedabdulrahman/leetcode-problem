@@ -1,27 +1,29 @@
+import java.util.*;
+
 class Solution {
     public String largestNumber(int[] nums) {
-        String[] newString = new String[nums.length];
+        String[] strNums = new String[nums.length];
 
-        //converting to string
+        // 1. Convert to string
         for(int i = 0; i < nums.length; i++){
-            newString[i] = String.valueOf(nums[i]);
+            strNums[i] = String.valueOf(nums[i]);
         }
 
-
-        //sorting the value from newString and implement custom comparator
-        Arrays.sort(newString, new Comparator<String>(){
+        // 2. Sort using custom comparator
+        Arrays.sort(strNums, new Comparator<String>(){
             public int compare(String a , String b){
                 String order1 = a + b;
                 String order2 = b + a;
-                return order2.compareTo(order1); // it will compare by using ASCII value for string
+                return order2.compareTo(order1); // descending
             }
         });
 
-        //edge case: if the largest is 0
-        if(newString[0].equals("0")) return "0";
+        // 3. Edge case: if the largest is "0", return "0"
+        if(strNums[0].equals("0")) return "0";
 
+        // 4. Join the result
         StringBuilder sb = new StringBuilder();
-        for(String num : newString){
+        for(String num : strNums){
             sb.append(num);
         }
 
