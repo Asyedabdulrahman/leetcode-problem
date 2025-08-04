@@ -15,18 +15,19 @@
  */
 class Solution {
     public boolean isSymmetric(TreeNode root) {
-        return isMirror(root.left, root.right);
+        return ismirror(root.left, root.right);
     }
 
-    private boolean isMirror(TreeNode val1, TreeNode val2){
-        if(val1 == null && val2 == null){
+    private boolean ismirror(TreeNode n1, TreeNode n2){
+        if(n1 == null && n2 == null){
             return true;
         }
 
-        if(val1 == null || val2 == null){
+        if(n1 == null || n2 == null){
             return false;
         }
 
-        return val1.val == val2.val && isMirror(val1.left, val2.right) && isMirror(val1.right, val2.left);
+
+        return n1.val == n2.val && ismirror(n1.left, n2.right) && ismirror(n1.right, n2.left);
     }
 }
