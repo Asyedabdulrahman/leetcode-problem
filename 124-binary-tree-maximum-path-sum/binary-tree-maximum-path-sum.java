@@ -16,21 +16,18 @@
 class Solution {
     public int maxPathSum(TreeNode root) {
         int[] res = {root.val};
-        dfs(root,res);
+        bst(root, res);
         return res[0];
-    }
+    };
 
-    private int dfs(TreeNode node, int[] res){
+    private int bst(TreeNode node, int[] res){
         if(node == null) return 0;
 
-        int leftSum = Math.max(0, dfs(node.left, res));
-        int rightSum = Math.max(0, dfs(node.right,res));
+        int leftSum = Math.max(0,bst(node.left, res));
+        int rightSum = Math.max(0, bst(node.right, res));
 
         res[0] = Math.max(res[0], leftSum + rightSum + node.val);
 
-        return Math.max(leftSum, rightSum) + node.val;
-    
-    
+        return node.val + Math.max(leftSum, rightSum);
     }
-
 }
