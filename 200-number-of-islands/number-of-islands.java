@@ -26,5 +26,4 @@ private void DFSMarking(char[][] grid, int i, int j) {
     DFSMarking(grid, i, j + 1);
     DFSMarking(grid, i, j - 1);
 }
-
 }
