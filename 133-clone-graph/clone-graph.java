@@ -19,10 +19,11 @@ class Node {
 */
 
 class Solution {
-    Map<Node,Node> map = new HashMap<>();
+    Map<Node, Node> map = new HashMap<>();
 
     public Node cloneGraph(Node node) {
-        if(node == null){
+
+        if (node == null) {
             return null;
         }
 
@@ -30,12 +31,12 @@ class Solution {
 
         if(clonedNode == null){
             clonedNode = new Node(node.val);
-
-            map.put(node,clonedNode);
+            map.put(node, clonedNode);
 
             for(Node neighbor: node.neighbors){
                 clonedNode.neighbors.add(cloneGraph(neighbor));
             }
+
         }
         return clonedNode;
     }
