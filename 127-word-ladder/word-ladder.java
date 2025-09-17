@@ -1,49 +1,58 @@
+import java.util.*;
+
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> wordSet = new HashSet<>(wordList);
+        if (!wordSet.contains(endWord)) return 0;
 
-        if(!wordSet.contains(endWord)){
-            return 0;
-        }
+        Set<String> beginSet = new HashSet<>();
+        Set<String> endSet = new HashSet<>();
+        Set<String> visited = new HashSet<>();
 
+        beginSet.add(beginWord);
+        endSet.add(endWord);
 
-        // bfd queue starting
-        Queue<String> queue = new ArrayDeque<>();
-        queue.offer(beginWord);
+        int steps = 1;
 
-        int transformationSteps = 1;
+        while (!beginSet.isEmpty() && !endSet.isEmpty()) {
+            // Always expand the smaller frontier
+            if (beginSet.size() > endSet.size()) {
+                Set<String> temp = beginSet;
+                beginSet = endSet;
+                endSet = temp;
+            }
 
-        while(!queue.isEmpty()){
-            int currentLevelSize = queue.size();
+            Set<String> nextLevel = new HashSet<>();
 
-            for(int i = 0; i < currentLevelSize; i++){
-                String currentWord = queue.poll();
-                char[] charArray = currentWord.toCharArray();
+            for (String word : beginSet) {
+                char[] charArray = word.toCharArray();
 
-                for(int charIndex = 0; charIndex < charArray.length; charIndex++){
-                    char originalChar = charArray[charIndex];
+                for (int i = 0; i < charArray.length; i++) {
+                    char originalChar = charArray[i];
 
-                    for(char newChar = 'a'; newChar <= 'z'; newChar++){
-                        if(newChar == originalChar) continue;
+                    for (char c = 'a'; c <= 'z'; c++) {
+                        if (c == originalChar) continue;
 
-                        charArray[charIndex] = newChar;
-                        String transformedWord = new String(charArray);
+                        charArray[i] = c;
+                        String newWord = new String(charArray);
 
-                        if(endWord.equals(transformedWord)){
-                            return transformationSteps + 1;
+                        // If the other frontier contains this word, we found a path
+                        if (endSet.contains(newWord)) {
+                            return steps + 1;
                         }
 
-                        if(wordSet.contains(transformedWord)){
-                            queue.offer(transformedWord);
-                            wordSet.remove(transformedWord);
+                        if (wordSet.contains(newWord) && !visited.contains(newWord)) {
+                            nextLevel.add(newWord);
+                            visited.add(newWord);
                         }
                     }
-                    charArray[charIndex] = originalChar;
+                    charArray[i] = originalChar;
                 }
             }
-            transformationSteps++;
-
+            beginSet = nextLevel;
+            steps++;
         }
+
         return 0;
     }
 }
