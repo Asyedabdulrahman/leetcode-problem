@@ -1,45 +1,49 @@
 class Solution {
-    class Pair{
-        String s;
-        int n;
-        Pair(String s, int n){
-            this.s = s;
-            this.n = n;
-        }
-    }
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        HashSet<String> set = new HashSet<>();
-        Queue<Pair> q = new LinkedList<>();
-         q.offer(new Pair(beginWord,1));
+        Set<String> wordSet = new HashSet<>(wordList);
 
-         for(int i=0; i<wordList.size(); i++){
-            set.add(wordList.get(i));
-         }
+        if(!wordSet.contains(endWord)){
+            return 0;
+        }
 
-         set.remove(beginWord);
-         while(!q.isEmpty()){
-            Pair curr = q.poll();
-            String word = curr.s;
-            int steps = curr.n;
 
-            if(word.equals(endWord)){
-                return steps;
-            }
+        // bfd queue starting
+        Queue<String> queue = new ArrayDeque<>();
+        queue.offer(beginWord);
 
-            for(int i=0; i<word.length(); i++){
-                for(char c = 'a'; c<='z'; c++){
-                    char[] wordToCharArray = word.toCharArray();
-                     wordToCharArray[i] = c;
-                    String replacedWord = new String(wordToCharArray);
-                    if(set.contains(replacedWord)){
-                        q.offer(new Pair(replacedWord,steps+1));
-                        set.remove(replacedWord);
+        int transformationSteps = 1;
+
+        while(!queue.isEmpty()){
+            int currentLevelSize = queue.size();
+
+            for(int i = 0; i < currentLevelSize; i++){
+                String currentWord = queue.poll();
+                char[] charArray = currentWord.toCharArray();
+
+                for(int charIndex = 0; charIndex < charArray.length; charIndex++){
+                    char originalChar = charArray[charIndex];
+
+                    for(char newChar = 'a'; newChar <= 'z'; newChar++){
+                        if(newChar == originalChar) continue;
+
+                        charArray[charIndex] = newChar;
+                        String transformedWord = new String(charArray);
+
+                        if(endWord.equals(transformedWord)){
+                            return transformationSteps + 1;
+                        }
+
+                        if(wordSet.contains(transformedWord)){
+                            queue.offer(transformedWord);
+                            wordSet.remove(transformedWord);
+                        }
                     }
+                    charArray[charIndex] = originalChar;
                 }
             }
-            
-        }
+            transformationSteps++;
 
-         return 0;
+        }
+        return 0;
     }
 }
