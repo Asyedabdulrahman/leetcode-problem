@@ -31,4 +31,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0287-find-the-duplicate-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0287-find-the-duplicate-number) |
+| [0338-counting-bits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0338-counting-bits) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0338-counting-bits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0338-counting-bits) |
 <!---LeetCode Topics End-->
