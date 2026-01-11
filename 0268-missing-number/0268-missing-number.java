@@ -3,7 +3,7 @@ class Solution {
         int sum = 0; 
 
         for(int i = 1; i <= nums.length; i++){
-            sum = sum ^ i;
+            sum = sum ^ i ;
         }
 
         for(int i = 0; i < nums.length; i++){
