@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0084-largest-rectangle-in-histogram) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0287-find-the-duplicate-number) |
 | [0496-next-greater-element-i](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0496-next-greater-element-i) |
@@ -64,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0084-largest-rectangle-in-histogram) |
 | [0402-remove-k-digits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0496-next-greater-element-i) |
 | [0735-asteroid-collision](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0735-asteroid-collision) |
@@ -72,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Monotonic Stack
 |  |
 | ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0084-largest-rectangle-in-histogram) |
 | [0402-remove-k-digits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0496-next-greater-element-i) |
 | [0907-sum-of-subarray-minimums](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0907-sum-of-subarray-minimums) |
