@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0002-add-two-numbers) |
+| [0146-lru-cache](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0146-lru-cache) |
 ## Math
 |  |
 | ------- |
@@ -56,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0146-lru-cache) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
 | [0496-next-greater-element-i](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0496-next-greater-element-i) |
 ## Sorting
@@ -91,4 +93,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0402-remove-k-digits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0402-remove-k-digits) |
+## Design
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0146-lru-cache) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
