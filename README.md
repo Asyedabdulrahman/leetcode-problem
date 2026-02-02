@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0002-add-two-numbers) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0146-lru-cache](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0146-lru-cache) |
 ## Math
 |  |
@@ -72,6 +73,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0084-largest-rectangle-in-histogram) |
 | [0094-binary-tree-inorder-traversal](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0094-binary-tree-inorder-traversal) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0402-remove-k-digits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0496-next-greater-element-i) |
 | [0735-asteroid-collision](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0735-asteroid-collision) |
@@ -114,6 +116,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0102-binary-tree-level-order-traversal](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0102-binary-tree-level-order-traversal) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0110-balanced-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0110-balanced-binary-tree) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0199-binary-tree-right-side-view](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0199-binary-tree-right-side-view) |
 | [0543-diameter-of-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0662-maximum-width-of-binary-tree) |
@@ -126,6 +129,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0100-same-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0101-symmetric-tree) |
 | [0110-balanced-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0110-balanced-binary-tree) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0199-binary-tree-right-side-view](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0199-binary-tree-right-side-view) |
 | [0543-diameter-of-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0662-maximum-width-of-binary-tree) |
@@ -140,6 +144,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0102-binary-tree-level-order-traversal](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0102-binary-tree-level-order-traversal) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0110-balanced-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0110-balanced-binary-tree) |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0199-binary-tree-right-side-view](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0199-binary-tree-right-side-view) |
 | [0543-diameter-of-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0662-maximum-width-of-binary-tree) |
