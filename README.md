@@ -64,12 +64,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
 | [0496-next-greater-element-i](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0496-next-greater-element-i) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0767-reorganize-string](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0767-reorganize-string) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 ## Sorting
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
+| [0767-reorganize-string](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0767-reorganize-string) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 ## Stack
 |  |
@@ -100,10 +102,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0402-remove-k-digits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0402-remove-k-digits) |
+| [0767-reorganize-string](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0767-reorganize-string) |
 ## Greedy
 |  |
 | ------- |
 | [0402-remove-k-digits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0402-remove-k-digits) |
+| [0767-reorganize-string](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0767-reorganize-string) |
 ## Design
 |  |
 | ------- |
@@ -198,4 +202,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0700-search-in-a-binary-search-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0700-search-in-a-binary-search-tree) |
 | [0701-insert-into-a-binary-search-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0701-insert-into-a-binary-search-tree) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0767-reorganize-string](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0767-reorganize-string) |
+## Counting
+|  |
+| ------- |
+| [0767-reorganize-string](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0767-reorganize-string) |
 <!---LeetCode Topics End-->
