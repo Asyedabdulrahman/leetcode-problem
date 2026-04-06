@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0084-largest-rectangle-in-histogram) |
+| [0213-house-robber-ii](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0213-house-robber-ii) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0287-find-the-duplicate-number) |
 | [0496-next-greater-element-i](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0496-next-greater-element-i) |
@@ -52,6 +53,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0213-house-robber-ii](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0213-house-robber-ii) |
 | [0338-counting-bits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0338-counting-bits) |
 | [0907-sum-of-subarray-minimums](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0907-sum-of-subarray-minimums) |
 ## Divide and Conquer
