@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0064-minimum-path-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0064-minimum-path-sum) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0084-largest-rectangle-in-histogram) |
 | [0213-house-robber-ii](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0213-house-robber-ii) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
@@ -53,6 +54,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0064-minimum-path-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0064-minimum-path-sum) |
 | [0213-house-robber-ii](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0213-house-robber-ii) |
 | [0338-counting-bits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0338-counting-bits) |
 | [0907-sum-of-subarray-minimums](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0907-sum-of-subarray-minimums) |
@@ -222,6 +224,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0064-minimum-path-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0064-minimum-path-sum) |
 | [0733-flood-fill](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0733-flood-fill) |
 ## Prefix Sum
 |  |
