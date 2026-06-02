@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0064-minimum-path-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0064-minimum-path-sum) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0084-largest-rectangle-in-histogram) |
+| [0169-majority-element](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0169-majority-element) |
 | [0213-house-robber-ii](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0213-house-robber-ii) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0287-find-the-duplicate-number) |
@@ -61,12 +62,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0191-number-of-1-bits) |
 ## Hash Table
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0146-lru-cache) |
+| [0169-majority-element](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
 | [0496-next-greater-element-i](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0560-subarray-sum-equals-k) |
@@ -77,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Sorting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
 | [0767-reorganize-string](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0767-reorganize-string) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
@@ -220,6 +224,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0169-majority-element) |
 | [0767-reorganize-string](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0767-reorganize-string) |
 ## Matrix
 |  |
