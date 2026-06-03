@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0001-two-sum) |
 | [0064-minimum-path-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0064-minimum-path-sum) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0084-largest-rectangle-in-histogram) |
 | [0169-majority-element](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0169-majority-element) |
@@ -68,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0001-two-sum) |
 | [0146-lru-cache](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
