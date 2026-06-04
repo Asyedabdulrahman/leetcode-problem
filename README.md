@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0001-two-sum) |
 | [0064-minimum-path-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0064-minimum-path-sum) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0084-largest-rectangle-in-histogram) |
+| [0128-longest-consecutive-sequence](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0169-majority-element) |
 | [0213-house-robber-ii](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0213-house-robber-ii) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
@@ -70,6 +71,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0001-two-sum) |
+| [0128-longest-consecutive-sequence](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0128-longest-consecutive-sequence) |
 | [0146-lru-cache](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0146-lru-cache) |
 | [0169-majority-element](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0169-majority-element) |
 | [0268-missing-number](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0268-missing-number) |
@@ -240,6 +242,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Union-Find
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0128-longest-consecutive-sequence) |
 | [0547-number-of-provinces](https://github.com/Asyedabdulrahman/leetcode-problem/tree/master/0547-number-of-provinces) |
 ## Graph Theory
 |  |
